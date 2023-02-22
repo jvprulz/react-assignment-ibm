@@ -49,3 +49,36 @@ console.log(a, b)
 const obj = {name: "Kevin", age: 25}
 const {name} = obj;
 console.log(name)
+
+/* ----------------------- Remove consecutive duplicates in string -------------------------*/
+
+const removeConsecutiveDuplicates = (str) => {
+    let newstr = "";
+    let strlen = str.length;
+    
+    if (strlen == 0)
+        return str;
+    for (let i = 0; i < strlen - 1; i++) {
+        if (s[i] != s[i + 1]) {
+            newstr += str[i];
+        }
+    }
+    
+    newstr += str[strlen-1];
+    return newstr;
+}
+
+/* ----------------------- Remove consecutive duplicates in square matrix -------------------------*/
+
+const matrixDifference = (arr, n) => {
+    let diag1 = 0, diag2 = 0;
+     
+    for (let i = 0; i < n; i++)
+    {
+        diag1 += arr[i][i];
+        diag2 += arr[i][n-i-1];
+    }
+
+    return Math.abs(diag1 - diag2);
+}
+         
