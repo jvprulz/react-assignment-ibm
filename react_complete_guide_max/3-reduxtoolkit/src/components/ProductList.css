@@ -1,0 +1,13 @@
+.product_list {
+    border: 2px solid rgb(0, 255, 153);
+    padding: 5%;
+    margin: 5%;
+}
+.product_list--price {
+    float: right;
+    padding: 0 15px;
+}
+.product_list--add_to_cart {
+    border-radius: 5px;
+    float: right;
+}

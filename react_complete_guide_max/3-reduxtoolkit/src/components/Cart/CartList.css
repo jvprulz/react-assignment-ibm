@@ -1,0 +1,13 @@
+.cart_list {
+    border: 2px solid rgb(255, 0, 0);
+    padding: 5%;
+    margin: 5%;
+}
+.cart_list--price {
+    float: right;
+    padding: 0 15px;
+}
+.cart_list--hide_cart {
+    border-radius: 5px;
+    float: right;
+}
